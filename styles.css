@@ -1,0 +1,146 @@
+.attribution {
+    font-size: 11px; text-align: center;
+}
+.attribution a {
+    color: #3e52a3;
+}
+body{
+    font-family: 'Space Mono', monospace;
+    background-color: #c5e4e7;
+}
+.main{
+  background-color: #fff;
+  padding: 3% 3%;
+  border-radius: 10px;
+  margin: 7% 15%;
+}
+/*Input*/
+.input-selection{
+  padding-right: 3%;
+}
+.bill, .number-of-people{
+    font-size: 24px;
+}
+.bill:hover, .number-of-people:hover{
+    border-color:	#26c0ab;
+}
+.form-control:focus{
+  box-shadow: none;
+  border-color:	#26c0ab;
+}
+.bill{
+  background-image: url("images/icon-dollar.svg");
+  background-position: 10px 15px;
+  background-repeat: no-repeat;
+  padding-left: 40px;
+  text-align: right;
+  background-color: #f4fafa;
+}
+.number-of-people{
+  background-image: url("images/icon-person.svg");
+  background-position: 10px 15px;
+  background-repeat: no-repeat;
+  padding-left: 40px;
+  text-align: right;
+  background-color: #f4fafa;
+}
+
+/*Buttons*/
+.buttons{
+  margin-bottom: 15px;
+}
+.percent{
+  background-color: #00494d;
+  width: 110px;
+  height: 40px;
+  padding: 0;
+  border: 0;
+  display: inline-block;
+  margin: 0 15px 15px 0;
+  font-weight: bold;
+}
+.btn:focus{
+  box-shadow: none;
+  background-color: #26c0ab;
+}
+.btn:hover{
+  background-color: #c5e4e7;
+  color: #00494d;
+}
+.custom{
+  text-align: right;
+  width: 110px;
+  height: 40px;
+  font-weight: 700;
+  font-size: 22px;
+  border: 0;
+  background-color: #f4fafa;
+}
+.custom:active{
+  border-color: #26c0ab;
+}
+
+/*Result*/
+.result{
+  background-color: #00494d;
+  color: #fff;
+  border-radius: 10px;
+  padding: 5% 3%;
+}
+.sub{
+  font-size: 12px;
+  color: #c5e4e7;
+}
+.tip-total-amount{
+  padding-right: 40px;
+}
+.tip-amount{
+  margin-bottom: 40px;
+}
+.tip-amount-value{
+  margin-bottom: 30px;
+}
+
+.tip-amount-value p, .total-amount-value p{
+  font-weight: 700;
+  font-size: 48px;
+  color: #26c0ab;
+}
+.reset{
+  background-color: #26c0ab;
+  font-weight: bold;
+}
+.reset:hover{
+  background-color: #c5e4e7;
+}
+
+@media (max-width: 1024px){
+  .tip-amount-value p, .total-amount-value p{
+    font-size: 42px;
+  }
+}
+@media (max-width: 768px){
+  .result{
+    padding: 7% 5%;
+  }
+  .input-selection{
+    margin-bottom: 30px;
+  }
+  .tip-amount-value, .total-amount-value{
+    padding-left: 90px;
+  }
+}
+@media (max-width: 375px){
+  .main{
+    margin: 0;
+  }
+  .tip-amount-value, .total-amount-value{
+    padding-left: 0;
+  }
+  .tip{
+    margin-bottom: 0;
+  }
+  .tip-amount-value p, .total-amount-value p{
+    font-size: 40px;
+  }
+}
